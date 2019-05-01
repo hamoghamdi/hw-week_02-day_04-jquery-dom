@@ -77,10 +77,6 @@ $("#button5").on('click', question5);
  * When button 6 is clicked, change the html content of all "blockquotes" to be "<span>no quote</span>"
  */
 
-// function question6() {
-// 	$("blockquotes").html("<span>no quote</span>");
-// }
-// not sure why this isn't working
 $("#button6").click(function(){
 	$("blockquote").html("<span>no quote</span>");
 });
