@@ -77,7 +77,13 @@ $("#button5").on('click', question5);
  * When button 6 is clicked, change the html content of all "blockquotes" to be "<span>no quote</span>"
  */
 
- // your answer here
+// function question6() {
+// 	$("blockquotes").html("<span>no quote</span>");
+// }
+// not sure why this isn't working
+$("#button6").click(function(){
+	$("blockquote").html("<span>no quote</span>");
+});
 
 ///////////////////////////////////////////////////////////////////////////////////////
 // SECTION 3: This section is more difficult. Try your hand at the next 3 questions. //
@@ -88,7 +94,9 @@ $("#button5").on('click', question5);
  * When button 7 is clicked, change the text in the header's h1 tag to read "jQuery Ninja"
  */
 
- // your answer here
+$('#button7').click(function(){
+	$('h1').text("jQuery Ninja");
+})
 
 /**
  * Question 8:
@@ -96,14 +104,18 @@ $("#button5").on('click', question5);
  * $(".city").attr("src", "http://lorempixel.com/g/500/400/food");
  */
 
- // your answer here
+$('#button8').click(function(){
+	 $(".city").attr("src", "http://lorempixel.com/g/500/400/food");
+ }) 
 
 /**
  * Question 9:
  * When button 9 is clicked, select all paragraphs on the page and change the color to blue and font to Georgia.
  */
 
-// your answer here
+$('#button9').click(function(){
+	$('p').css({ "color": "blue" }, { "font-family":"Georgia" })
+})
 
 /**
  * Question 10:
@@ -111,6 +123,8 @@ $("#button5").on('click', question5);
  * but with only one jQuery. $("selector").css({attribute: "value", attribute: "value"})
  */
 
-// your answer here
+$('#button10').click(function () {
+	$('p').css({ "color": "blue" }, { "font-family": "Georgia" })
+}) // this is basically one jquery
 
 
